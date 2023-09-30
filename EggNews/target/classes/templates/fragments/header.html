@@ -1,0 +1,42 @@
+<div th:fragment="navbar">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <div class="col-md-2 mb-2 mb-md-0 custom-left-align text-center">
+            <a href="/" class="d-inline-block">
+                <img th:src="@{/images/Egg.png}" alt="Logo" width="200" height="45"/>
+            </a>
+        </div>
+
+    <div class="col-md-2 justify-content-center">
+        <div class="dropdown">
+            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+            >
+                Ir a
+            </a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" th:href="@{/noticias}">Noticias</a></li>
+
+            <li><a class="dropdown-item" th:href="@{/lista}">Lista de Noticias</a></li>
+
+            <li><a class="dropdown-item" th:href="@{/registrar}">Crear Noticia</a></li>
+
+        </ul>
+
+        </div>
+    </div>
+    </header>
+</div>
+
+<!--/*  <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+              */-->
+
+<!--/* <div th:fragment="navbar">
+         <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img th:src="@{/images/imgEggBlanco.jpg}" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+                    Bootstrap
+                </a>
+            </div>
+        </nav>
+    </div>
+*/-->
