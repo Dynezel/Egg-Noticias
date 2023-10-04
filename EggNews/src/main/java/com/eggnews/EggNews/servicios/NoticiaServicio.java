@@ -27,11 +27,12 @@ public class NoticiaServicio {
     }
 
 
-    public Noticia guardarNoticia(String titulo, String cuerpo, String url) throws Excepcion{
+    public Noticia guardarNoticia(String titulo, String cuerpo, String url, String imagen) throws Excepcion{
         Noticia noticia = new Noticia();
         noticia.setTitulo(titulo);
         noticia.setCuerpo(cuerpo);
         noticia.setUrl(url);
+        noticia.setImagen(imagen);
         return noticiaRepositorio.save(noticia);
     }
 
@@ -42,7 +43,7 @@ public class NoticiaServicio {
     }
 
 
-    public void modificarNoticia(Long id, String titulo, String cuerpo, String url) throws Excepcion {
+    public void modificarNoticia(Long id, String titulo, String cuerpo, String url, String imagen) throws Excepcion {
         Optional<Noticia> respuesta = noticiaRepositorio.findById(id);
         if (respuesta.isPresent()) {
             Noticia noticia = respuesta.get();
@@ -52,6 +53,8 @@ public class NoticiaServicio {
             noticia.setCuerpo(cuerpo);
 
             noticia.setUrl(url);
+
+            noticia.setImagen(imagen);
 
             noticiaRepositorio.save(noticia);
 

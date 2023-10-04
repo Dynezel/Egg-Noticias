@@ -21,7 +21,10 @@ public class NoticiaControlador {
     private NoticiaServicio noticiaServicio;
 
     @GetMapping("/")
-    public String index() {
+    public String index(ModelMap modelo) {
+        List<Noticia> noticia = noticiaServicio.listarNoticias();
+
+        modelo.addAttribute("noticia", noticia);
         return "index.html";
     }
 
@@ -40,13 +43,6 @@ public class NoticiaControlador {
         return "prueba";
     }
 
-    @GetMapping("/noticias")
-    public String cartas(ModelMap modelo) {
-        List<Noticia> noticia = noticiaServicio.listarNoticias();
-
-        modelo.addAttribute("noticia", noticia);
-        return "noticia";
-    }
 
     @GetMapping("/registrar")
     public String registrarNoticia() {
@@ -54,15 +50,17 @@ public class NoticiaControlador {
     }
 
     @PostMapping("/crear")
-    public String crearNoticia(@RequestParam String titulo, String cuerpo, String url, ModelMap modelo) {
+    public String crearNoticia(@RequestParam String titulo, String cuerpo, String url, String imagen, ModelMap modelo) {
         try {
-            noticiaServicio.guardarNoticia(titulo, cuerpo, url);
+            noticiaServicio.guardarNoticia(titulo, cuerpo, url, imagen);
+            modelo.put("exito", "La noticia fue cargada correctamente!");
+
         } catch (Excepcion ex) {
 
             modelo.put("error", ex.getMessage());
             return "noticia_form.html";
         }
-        return "index";
+        return "redirect:/";
     }
 
     @GetMapping("/modificar/{id}")
@@ -72,9 +70,9 @@ public class NoticiaControlador {
     }
 
     @PostMapping("/modificar/{id}")
-    public String modificar(@PathVariable Long id, String titulo, String cuerpo, String url, ModelMap modelo) {
+    public String modificar(@PathVariable Long id, String titulo, String cuerpo, String url, String imagen, ModelMap modelo) {
         try {
-            noticiaServicio.modificarNoticia(id, titulo, cuerpo, url);
+            noticiaServicio.modificarNoticia(id, titulo, cuerpo, url, imagen);
 
             return "redirect:../lista";
         } catch (Excepcion ex) {
@@ -82,14 +80,16 @@ public class NoticiaControlador {
             return "noticia_modificar.html";
         }
 
-        //eliminar
-        //@GetMapping("/{id}")
-        //public String eliminar(@PathVariable Noticia noticia, ModelMap modelo) throws Excepcion{
-        //noticiaServicio.eliminarNoticia(noticia);
 
-        // return "autor_eliminar.html";
-        //}
 
     }
 }
+
+//eliminar
+//@GetMapping("/{id}")
+//public String eliminar(@PathVariable Noticia noticia, ModelMap modelo) throws Excepcion{
+//noticiaServicio.eliminarNoticia(noticia);
+
+// return "autor_eliminar.html";
+//}
 

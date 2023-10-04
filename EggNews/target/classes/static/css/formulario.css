@@ -1,5 +1,5 @@
 .navBar{
-    background-color: #fff !important;
+    background-color: #fff;
 }
 
 .elementosNav{
@@ -37,7 +37,7 @@
 }
 
 .formulario{
-    width: 50%;
+    width: 70%;
     margin: auto;
     display: flex;
     flex-direction: column;
