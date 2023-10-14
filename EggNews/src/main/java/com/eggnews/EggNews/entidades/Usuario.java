@@ -1,7 +1,7 @@
 package com.eggnews.EggNews.entidades;
 
 import com.eggnews.EggNews.enumeraciones.Rol;
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -23,6 +23,12 @@ public class Usuario {
     private String email;
     private String password;
 
+
+
+
     @Enumerated(EnumType.STRING)
     private Rol rol;
+
+    @OneToOne
+    private Imagen imagen;
 }

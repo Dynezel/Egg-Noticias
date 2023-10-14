@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head>
+
+<head th:replace="fragments/head :: head"> </head>
+
 <body>
 <div th:replace = "fragments/header :: navbar"></div>
-<div class = "embed-responsive embed-responsive-16by9"  th:action="@{/noticia/__${noticia.id}__}">
+<div class = "embed-responsive embed-responsive-16by9"  th:action="@{/noticia/__${noticia.idNoticia}__}">
     <iframe class = "embed-responsive-item" th:src="${noticia.url}"
             width="100%" height="100%"></iframe>
 </div>

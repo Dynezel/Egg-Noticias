@@ -1,6 +1,6 @@
 package com.eggnews.EggNews.entidades;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,7 +15,7 @@ import org.hibernate.annotations.GenericGenerator;
 public class Noticia {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private Long id;
+    private Long idNoticia;
     private String titulo;
     @Column(columnDefinition = "longtext")
     private String cuerpo;

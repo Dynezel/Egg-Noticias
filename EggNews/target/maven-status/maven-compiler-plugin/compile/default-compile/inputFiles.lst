@@ -1,7 +1,15 @@
-C:\Users\Dylan Fernandez\Desktop\Estudio\Programación\Proyectos\Egg\EggNews\src\main\java\com\eggnews\EggNews\controladores\NoticiaControlador.java
+C:\Users\Dylan Fernandez\Desktop\Estudio\Programación\Proyectos\Egg\EggNews\src\main\java\com\eggnews\EggNews\repositorios\ImagenRepositorio.java
 C:\Users\Dylan Fernandez\Desktop\Estudio\Programación\Proyectos\Egg\EggNews\src\main\java\com\eggnews\EggNews\excepciones\Excepcion.java
+C:\Users\Dylan Fernandez\Desktop\Estudio\Programación\Proyectos\Egg\EggNews\src\main\java\com\eggnews\EggNews\servicios\UsuarioServicio.java
+C:\Users\Dylan Fernandez\Desktop\Estudio\Programación\Proyectos\Egg\EggNews\src\main\java\com\eggnews\EggNews\entidades\Imagen.java
+C:\Users\Dylan Fernandez\Desktop\Estudio\Programación\Proyectos\Egg\EggNews\src\main\java\com\eggnews\EggNews\controladores\AdminControlador.java
 C:\Users\Dylan Fernandez\Desktop\Estudio\Programación\Proyectos\Egg\EggNews\src\main\java\com\eggnews\EggNews\EggNewsApplication.java
-C:\Users\Dylan Fernandez\Desktop\Estudio\Programación\Proyectos\Egg\EggNews\src\main\java\com\eggnews\EggNews\SeguridadWeb.java
 C:\Users\Dylan Fernandez\Desktop\Estudio\Programación\Proyectos\Egg\EggNews\src\main\java\com\eggnews\EggNews\entidades\Noticia.java
+C:\Users\Dylan Fernandez\Desktop\Estudio\Programación\Proyectos\Egg\EggNews\src\main\java\com\eggnews\EggNews\entidades\Usuario.java
 C:\Users\Dylan Fernandez\Desktop\Estudio\Programación\Proyectos\Egg\EggNews\src\main\java\com\eggnews\EggNews\repositorios\NoticiaRepositorio.java
 C:\Users\Dylan Fernandez\Desktop\Estudio\Programación\Proyectos\Egg\EggNews\src\main\java\com\eggnews\EggNews\servicios\NoticiaServicio.java
+C:\Users\Dylan Fernandez\Desktop\Estudio\Programación\Proyectos\Egg\EggNews\src\main\java\com\eggnews\EggNews\servicios\ImagenServicio.java
+C:\Users\Dylan Fernandez\Desktop\Estudio\Programación\Proyectos\Egg\EggNews\src\main\java\com\eggnews\EggNews\controladores\NoticiaControlador.java
+C:\Users\Dylan Fernandez\Desktop\Estudio\Programación\Proyectos\Egg\EggNews\src\main\java\com\eggnews\EggNews\enumeraciones\Rol.java
+C:\Users\Dylan Fernandez\Desktop\Estudio\Programación\Proyectos\Egg\EggNews\src\main\java\com\eggnews\EggNews\repositorios\UsuarioRepositorio.java
+C:\Users\Dylan Fernandez\Desktop\Estudio\Programación\Proyectos\Egg\EggNews\src\main\java\com\eggnews\EggNews\SeguridadWeb.java

@@ -1,0 +1,15 @@
+com\eggnews\EggNews\EggNewsApplication.class
+com\eggnews\EggNews\repositorios\UsuarioRepositorio.class
+com\eggnews\EggNews\entidades\Usuario.class
+com\eggnews\EggNews\excepciones\Excepcion.class
+com\eggnews\EggNews\entidades\Imagen.class
+com\eggnews\EggNews\controladores\NoticiaControlador.class
+com\eggnews\EggNews\servicios\UsuarioServicio.class
+com\eggnews\EggNews\controladores\AdminControlador.class
+com\eggnews\EggNews\servicios\ImagenServicio.class
+com\eggnews\EggNews\repositorios\NoticiaRepositorio.class
+com\eggnews\EggNews\entidades\Noticia.class
+com\eggnews\EggNews\servicios\NoticiaServicio.class
+com\eggnews\EggNews\repositorios\ImagenRepositorio.class
+com\eggnews\EggNews\enumeraciones\Rol.class
+com\eggnews\EggNews\SeguridadWeb.class

@@ -21,14 +21,15 @@ public class NoticiaServicio {
     }
 
 
-    public Noticia buscarNoticiaPorId(Long id) throws Excepcion {
-        Noticia noticia = noticiaRepositorio.findById(id).orElse(null);
+    public Noticia buscarNoticiaPorId(Long idNoticia) throws Excepcion {
+        Noticia noticia = noticiaRepositorio.findById(idNoticia).orElse(null);
         return noticia;
     }
 
 
     public Noticia guardarNoticia(String titulo, String cuerpo, String url, String imagen) throws Excepcion{
         Noticia noticia = new Noticia();
+
         noticia.setTitulo(titulo);
         noticia.setCuerpo(cuerpo);
         noticia.setUrl(url);
@@ -37,14 +38,13 @@ public class NoticiaServicio {
     }
 
 
-
     public void eliminarNoticia(Noticia noticia) throws Excepcion {
         noticiaRepositorio.delete(noticia);
     }
 
 
-    public void modificarNoticia(Long id, String titulo, String cuerpo, String url, String imagen) throws Excepcion {
-        Optional<Noticia> respuesta = noticiaRepositorio.findById(id);
+    public void modificarNoticia(Long idNoticia, String titulo, String cuerpo, String url, String imagen) throws Excepcion {
+        Optional<Noticia> respuesta = noticiaRepositorio.findById(idNoticia);
         if (respuesta.isPresent()) {
             Noticia noticia = respuesta.get();
 
@@ -61,8 +61,8 @@ public class NoticiaServicio {
         }
     }
 
-    public Noticia getOne(Long id) {
-        return noticiaRepositorio.getOne(id);
+    public Noticia getOne(Long idNoticia) {
+        return noticiaRepositorio.getOne(idNoticia);
     }
 
 
