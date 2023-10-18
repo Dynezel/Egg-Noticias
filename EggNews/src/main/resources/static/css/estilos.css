@@ -3,7 +3,7 @@
     background-size: cover;
     height: 100vh;
     display: flex;
-    justify-content: end;
+    justify-content: center;
 }
 * {
     margin: 0;
